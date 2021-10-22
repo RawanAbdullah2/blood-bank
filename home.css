@@ -1,0 +1,414 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    top: 0px;
+    width: 450px;
+    height: 200px;
+    left: 8px;
+}
+
+.leftside {
+    height: 100vh;
+    width: 100%;
+}
+
+.hometext {
+    position: absolute;
+    height: 133px;
+    left: 83px;
+    top: 170px;
+    text-align: left;
+    font-family: Rosarivo;
+    line-height: 51px;
+    color: #000000;
+    width: 321px;
+    font-size: 26px;
+}
+
+.hometext span {
+    position: relative;
+    display: inline-block;
+    animation: animate 2.2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-5px);
+    }
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.homeimage {
+    height: 100vh;
+    width: 100%;
+}
+
+.loginbtn {
+    position: absolute;
+    width: 200px;
+    height: 46px;
+    color: red;
+    letter-spacing: 10px;
+    left: 83px;
+    top: 360px;
+    background: #FFFFFF;
+    border: 4px solid #E51B23;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.loginbtn:hover {
+    background: #E51B23;
+    border: 4px solid#E51B23;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.account {
+    position: absolute;
+    width: 253px;
+    height: 25px;
+    left: 92px;
+    top: 420px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.aboutbtn {
+    position: absolute;
+    color: red;
+    letter-spacing: 5px;
+    width: 210px;
+    height: 50px;
+    left: 83px;
+    top: 500px;
+    background: #FFFFFF;
+    border: 1px solid #E51B23;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.benefitsbtn {
+    position: absolute;
+    width: 210px;
+    height: 50px;
+    left: 330px;
+    top: 500px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #E51B23;
+    background: #FFFFFF;
+    border: 1px solid #E51B23;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.joinbtn {
+    position: absolute;
+    width: 460px;
+    height: 54px;
+    left: 83px;
+    top: 566px;
+    background: #FFFFFF;
+    border: 1px solid #E51B23;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    letter-spacing: 3px;
+    color: #E51B23;
+}
+
+.aboutbtn:hover,
+.benefitsbtn:hover,
+.joinbtn:hover {
+    background: #E51B23;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.logInWindow {
+    position: absolute;
+    background-color: #16161685;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+}
+
+.logInUser {
+    position: absolute;
+    background-color: #16161685;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.logInhospital {
+    position: absolute;
+    background-color: #16161685;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.signUpUser {
+    position: absolute;
+    background-color: #16161685;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.signUpHospital {
+    position: absolute;
+    background-color: #16161685;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.la {
+    position: relative;
+    padding: 10px;
+    display: table;
+    color: #e51b229d;
+    width: 409px;
+    height: 50px;
+    left: 65px;
+    top: 240px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 0px;
+    padding-left: 20px;
+    font-size: 18px;
+    ;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.fa-folder-plus {
+    position: relative;
+    top: 5px;
+    left: 190px
+}
+
+.CloseForm {
+    position: absolute;
+    top: 40px;
+    right: 350px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.CloseForm:hover {
+    color: rgb(214, 24, 24);
+}
+
+.line1 {
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    border-top: 2px solid #E51B23;
+    left: 505px;
+    top: 177px;
+    z-index: 1;
+}
+
+.line2 {
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    border-top: 2px solid #E51B23;
+    left: 815px;
+    top: 177px;
+    z-index: 1;
+}
+
+.div1 {
+    position: absolute;
+    display: flex;
+    background: #EDEDED;
+    width: 530px;
+    left: 32%;
+    top: 15%;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.margin1 {
+    position: absolute;
+    width: 235px;
+    height: 42px;
+    left: 150px;
+    top: 180px;
+    background: #E51B23;
+    border-radius: 30px;
+    border: #E51B23 0px;
+}
+
+.butn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 33px;
+    color: white;
+}
+
+.butn:hover {
+    border: #E51B23 solid 3px;
+    background-color: white;
+    color: #E51B23;
+}
+
+.sign {
+    position: absolute;
+    width: 153px;
+    height: 54px;
+    left: 218px;
+    top: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 54px;
+    color: #E51B23;
+}
+
+.fam {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 33px;
+    color: rgba(255, 0, 0, 0.411);
+    border: 0px;
+}
+
+.in {
+    position: absolute;
+    width: 409px;
+    height: 50px;
+    left: 65px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px;
+    border: 0px;
+}
+
+.massege {
+    position: absolute;
+    background: #756d6d;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid #E51B23;
+    color: #E51B23
+}
+
+.in:hover {
+    border: 0px;
+}
+
+.in::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.411)
+}
+
+.signUpUser .in {
+    width: 320px;
+    height: 40px;
+    padding: 7px;
+    border: 0px;
+    left: 105px;
+}
+
+@media screen and (max-width:1100px) {
+    .joinbtn {
+        width: 60%;
+    }
+    .aboutbtn {
+        width: 30%;
+        left: 10%;
+    }
+    .benefitsbtn {
+        width: 30%;
+        left: 50%;
+    }
+    .hometext {
+        width: 290px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .joinbtn {
+        width: 49%;
+    }
+    .aboutbtn {
+        width: 25%;
+        left: 10%;
+    }
+    .benefitsbtn {
+        width: 25%;
+        left: 50%;
+    }
+    .hometext {
+        width: 240px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .hometext {
+        text-align: center;
+        width: 80%;
+    }
+    .joinbtn {
+        width: 50%;
+        left: 25%;
+    }
+    .aboutbtn {
+        width: 35%;
+        left: 15%;
+    }
+    .benefitsbtn {
+        width: 35%;
+        left: 55%;
+    }
+    .loginbtn {
+        width: 50%;
+        left: 25%;
+    }
+}
